@@ -29,7 +29,7 @@ app.post('/', async (req, res) => {
       res.status(200).send({
         bot: 'Please enter a question!'
       });
-    } else if (prompt.length < 5) {
+    } else if (prompt.length < 10) {
       res.status(200).send({
         bot: 'Please enter a question!'
       });
