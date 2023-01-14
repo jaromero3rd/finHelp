@@ -11560,7 +11560,7 @@ html {
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #1abc9c;
 }
 
 .profile img {
@@ -11594,7 +11594,8 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #10a37f;
+  background: #5019BC;
+  border-radius: 5px;
 
   display: flex;
   flex-direction: row;
@@ -11604,7 +11605,7 @@ form {
 textarea {
   width: 100%;
 
-  color: #5019BC;
+  color: #f8f9fa;
   font-size: 18px;
 
   padding: 10px;
