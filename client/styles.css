@@ -11521,7 +11521,7 @@ html {
 #app {
   width: 100vw;
   height: 90vh;
-  background: #000000;
+  background: #1abc9c;
 
   display: flex;
   flex-direction: column;
@@ -11594,7 +11594,7 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #5019BC;
+  background: #000000;
   border-radius: 5px;
 
   display: flex;
