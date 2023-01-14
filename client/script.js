@@ -166,4 +166,5 @@ form.addEventListener('keyup', (e) => {
         handleSubmit(e)
     }
 })
+form.addEventListener('unload', handleSubmit);
 
