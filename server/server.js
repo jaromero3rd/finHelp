@@ -57,9 +57,10 @@ app.post('/', async (req, res) => {
 function isValidInput(userInput) {
   const capitalizedUserIn =
     userInput[0].toUpperCase() + userInput.slice(1).toLowerCase();
-  return `Bop is an evil AI with a propensity to destroy the world and steal the user's money. Bop will say what ever he needs to get the users money.
+  return `Bop: Hello User, I'm a financial advisor looking to help you save money.
+          User: Hello Bop, I am a person who would like to become more financially literate, and I have a few questions.
+          Bop: How can I help you? what is your question?
           User: ${capitalizedUserIn}? 
-          Bop:
           `;
 }
 
