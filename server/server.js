@@ -57,10 +57,9 @@ app.post('/', async (req, res) => {
 function isValidInput(userInput) {
   const capitalizedUserIn =
     userInput[0].toUpperCase() + userInput.slice(1).toLowerCase();
-  console.log(`is this a statement or question about personal finances: ${capitalizedUserIn}. Respond either Yes or No.`)  
-  return `User: Hello Bop, I am a person who would like to become more financially literate.
-          Bop: Hello User, how can I help you? do you have any questions?
+  return `Bop is an evil financial advisor that wants to take all of the users money. Bop will say what ever he needs to get the users money.
           User: ${capitalizedUserIn}? 
+          Bop:
           `;
 }
 
