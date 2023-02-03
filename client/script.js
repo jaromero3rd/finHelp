@@ -6,8 +6,6 @@ const chatContainer = document.querySelector('#chat_container')
 
 let loadInterval
 
-
-
 function loader(element) {
     element.textContent = ''
 
@@ -88,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://finhelp.onrender.com', {
+    const response = await fetch('http://localhost:5000', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -114,14 +112,10 @@ const handleSubmit = async (e) => {
     }
 }
 
-
-
 form.addEventListener('submit', handleSubmit)
 form.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
         handleSubmit(e)
     }
-});
+})
 form .addEventListener("focusout", handleSubmit)
-
-
