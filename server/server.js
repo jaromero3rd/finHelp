@@ -35,7 +35,7 @@ app.post('/', async (req, res) => {
       });
     } else {
       const response = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       prompt: isValidInput(`${prompt}`), //`${prompt}`,
       temperature: 0, // Higher values means the model will take more risks.
       max_tokens: 100, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
@@ -57,10 +57,7 @@ app.post('/', async (req, res) => {
 function isValidInput(userInput) {
   const capitalizedUserIn =
     userInput[0].toUpperCase() + userInput.slice(1).toLowerCase();
-  return `Bop: Hello User, I'm a financial advisor looking to help you save money.
-          User: Hello Bop, I am a person who would like to become more financially literate, and I have a few questions.
-          Bop: How can I help you? what is your question?
-          User: ${capitalizedUserIn}? 
+  return `${capitalizedUserIn}? 
           `;
 }
 
