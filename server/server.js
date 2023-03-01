@@ -35,7 +35,7 @@ app.post('/', async (req, res) => {
       });
     } else {
       const response = await openai.createCompletion({
-      model: "gpt-3.5-turbo-0301",
+      model: "text-davinci-003",
       prompt: isValidInput(`${prompt}`), //`${prompt}`,
       temperature: 0, // Higher values means the model will take more risks.
       max_tokens: 100, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
