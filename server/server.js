@@ -3,6 +3,10 @@ import * as dotenv from 'dotenv'
 import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
+
+
+const { Configuration, OpenAIApi } = require("openai");
+
 dotenv.config()
 
 const configuration = new Configuration({
